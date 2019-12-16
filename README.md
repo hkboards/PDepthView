@@ -8,7 +8,7 @@ Turn any UIView into 2D+Depth mode
 
 
 
-Installation (Support Cocoapod soon)
+Installation (Support Cocoapods soon)
 - Manually
   Drag DepthModeView.swift and Cache.swift to your project
 
