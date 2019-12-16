@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		00059D2B23A7371D0087C1AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00059D2A23A7371D0087C1AE /* AppDelegate.swift */; };
 		00059D2D23A7371D0087C1AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00059D2C23A7371D0087C1AE /* SceneDelegate.swift */; };
-		00059D2F23A7371D0087C1AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00059D2E23A7371D0087C1AE /* ViewController.swift */; };
 		00059D3223A7371D0087C1AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00059D3023A7371D0087C1AE /* Main.storyboard */; };
 		00059D3423A7371E0087C1AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00059D3323A7371E0087C1AE /* Assets.xcassets */; };
 		00059D3723A7371E0087C1AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00059D3523A7371E0087C1AE /* LaunchScreen.storyboard */; };
 		00059D4223A7371E0087C1AE /* PDepthViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00059D4123A7371E0087C1AE /* PDepthViewTests.swift */; };
 		00059D4D23A7371E0087C1AE /* PDepthViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00059D4C23A7371E0087C1AE /* PDepthViewUITests.swift */; };
+		00059D5B23A737340087C1AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00059D5A23A737340087C1AE /* ViewController.swift */; };
+		00059D5F23A737420087C1AE /* DepthModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00059D5D23A737420087C1AE /* DepthModeView.swift */; };
+		00059D6023A737420087C1AE /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00059D5E23A737420087C1AE /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		00059D2723A7371D0087C1AE /* PDepthView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDepthView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00059D2A23A7371D0087C1AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00059D2C23A7371D0087C1AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00059D2E23A7371D0087C1AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00059D3123A7371D0087C1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00059D3323A7371E0087C1AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00059D3623A7371E0087C1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		00059D4823A7371E0087C1AE /* PDepthViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDepthViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00059D4C23A7371E0087C1AE /* PDepthViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDepthViewUITests.swift; sourceTree = "<group>"; };
 		00059D4E23A7371E0087C1AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00059D5A23A737340087C1AE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00059D5D23A737420087C1AE /* DepthModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthModeView.swift; sourceTree = "<group>"; };
+		00059D5E23A737420087C1AE /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		00059D2923A7371D0087C1AE /* PDepthView */ = {
 			isa = PBXGroup;
 			children = (
+				00059D5C23A737420087C1AE /* Classes */,
 				00059D2A23A7371D0087C1AE /* AppDelegate.swift */,
 				00059D2C23A7371D0087C1AE /* SceneDelegate.swift */,
-				00059D2E23A7371D0087C1AE /* ViewController.swift */,
+				00059D5A23A737340087C1AE /* ViewController.swift */,
 				00059D3023A7371D0087C1AE /* Main.storyboard */,
 				00059D3323A7371E0087C1AE /* Assets.xcassets */,
 				00059D3523A7371E0087C1AE /* LaunchScreen.storyboard */,
@@ -126,6 +131,15 @@
 				00059D4E23A7371E0087C1AE /* Info.plist */,
 			);
 			path = PDepthViewUITests;
+			sourceTree = "<group>";
+		};
+		00059D5C23A737420087C1AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				00059D5D23A737420087C1AE /* DepthModeView.swift */,
+				00059D5E23A737420087C1AE /* Cache.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00059D2F23A7371D0087C1AE /* ViewController.swift in Sources */,
+				00059D5B23A737340087C1AE /* ViewController.swift in Sources */,
+				00059D6023A737420087C1AE /* Cache.swift in Sources */,
 				00059D2B23A7371D0087C1AE /* AppDelegate.swift in Sources */,
 				00059D2D23A7371D0087C1AE /* SceneDelegate.swift in Sources */,
+				00059D5F23A737420087C1AE /* DepthModeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DC3J299U6T;
 				INFOPLIST_FILE = PDepthView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DC3J299U6T;
 				INFOPLIST_FILE = PDepthView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
